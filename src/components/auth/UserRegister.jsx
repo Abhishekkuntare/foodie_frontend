@@ -45,51 +45,76 @@ const UserRegister = () => {
     myForm.append("password", password);
     myForm.append("file", image);
 
+
     dispatch(userRegister(myForm));
   };
 
   return (
-    <div>
-      <form onSubmit={submitHandler}>
-        <img src={imagePrev} alt="img" style={{width:400,borderRadius:10}}  />
-        <label htmlFor="Name">Name</label>
-        <input
-          type="text"
-          placeholder="*name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+    <div className="user_login">
+      <video
+        style={{ borderRadius: "26% 74% 27% 73% / 54% 27% 73% 46% " }}
+        className="user_login_video"
+        src="v2.m4v"
+        autoPlay
+        muted
+        loop
+      ></video>
+      <div
+        style={{ marginTop: 20 }}
+        className="user_login_right user_login_right_mobile"
+      >
+        <h1>Create an account</h1>
+        <p>
+          Already have an account?
+          <Link to="/login">Sign in</Link>
+        </p>
 
-        <label htmlFor="email">Email</label>
-        <input
-          required
-          value={email}
-          type="email"
-          placeholder="*email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          required
-          value={password}
-          type="password"
-          placeholder="******"
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        <form
+          className="user_login_form user_login_form_mobile"
+          onSubmit={submitHandler}
+        >
+          <img
+            src={imagePrev}
+            alt="img"
+            style={{ width: 150, borderRadius: 10 }}
+          />
+          <label htmlFor="Name">Name</label>
+          <input
+            type="text"
+            placeholder="robert kane"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
 
-        <label htmlFor="choose Avatar">Choose Avatar</label>
-        <input
-          type="file"
-          accept="image/*"
-          required
-          css={fileUploadStyle}
-          onChange={changeImageHandler}
-        />
-        <button type="submit">Login</button>
-        <p>Already have an account? </p>
-        <Link to="/login">Sign in</Link>
-      </form>
+          <label htmlFor="email">Email</label>
+          <input
+            required
+            value={email}
+            type="email"
+            placeholder="abc@gmail.com"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="password">Password</label>
+          <input
+            required
+            value={password}
+            type="password"
+            placeholder="*********"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <label htmlFor="choose Avatar">Choose Avatar</label>
+          <input
+            type="file"
+            accept="image/*"
+            required
+            css={fileUploadStyle}
+            onChange={changeImageHandler}
+          />
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosFastforward } from "react-icons/io";
 import { motion } from "framer-motion";
 import loader from "../../assets/loader.gif";
 
@@ -19,7 +18,6 @@ const Loader = () => {
   };
   return (
     <div className="loader">
-      {/* <IoIosFastforward /> */}
       <div>
         <motion.img initial={{ ...options }} src={loader} alt="loader" />
       </div>

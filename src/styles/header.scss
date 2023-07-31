@@ -4,18 +4,15 @@ nav {
     height: 5rem;
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
-    background-color: white;
 
     >div {
         display: flex;
         align-items: center;
-
-
+        
         >a{
-           > img {
+            >img {
                 width: 5rem;
                 height: 5rem;
             }
@@ -23,20 +20,22 @@ nav {
 
         >a {
             margin: 0 2rem;
-            color: $dark;
+            color: #2b1000;
             transition: color 0.3s;
+            font-weight: 600;
 
             &:hover {
-                color: $lightdark;
+                color: #532103;
+                    font-weight: 900;
             }
 
             >svg {
-                color: $red;
+                color: #2b1000;
                 transition: inherit;
                 font-size: 1.5rem;
 
                 &:hover {
-                    color: $lightdark;
+                    color: #f89050;
                 }
             }
         }

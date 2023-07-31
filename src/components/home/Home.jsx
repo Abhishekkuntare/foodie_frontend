@@ -1,8 +1,8 @@
 import React from "react";
-
 import { motion } from "framer-motion";
-import Founder from "./Founder";
 import Menu from "./Menu";
+import a6 from "../../assets/home/a6.png"
+import "../../styles/all_media_queries.css"
 
 const Home = () => {
   const options = {
@@ -17,7 +17,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="main_home">
+      <div className="main_home" style={{backgroundColor:"#feefdb"}}>
         <section className="home">
           <div>
             <motion.h1 {...options}>
@@ -38,6 +38,7 @@ const Home = () => {
           >
             Explore Menu{" "}
           </motion.a>
+          <img className="arrow6" style={{marginLeft:110}} src={a6} alt="" />
         </section>
         <video className="user_login_video" src="v3.mp4" autoPlay muted loop />
       </div>

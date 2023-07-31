@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "../../styles/all_media_queries.css"
+
 
 const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
   return (
     <motion.div
-      className="menuCard"
+      className="menuCard menuCard_mobile"
       initial={{ x: "-100%", opacity: 0 }}
       whileInView={{
         x: 0,

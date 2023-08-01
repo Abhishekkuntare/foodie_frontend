@@ -93,4 +93,17 @@
         display: block;
         width: 100%;
     }
+                .cart {
+                    >main {
+                        padding: 1px;
+                    }
+                }
+        
+                .cartItem {
+                    >div {
+                        >h4 {
+                            font-size: 15px;
+                        }
+                    }
+                }
 }

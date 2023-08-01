@@ -16,3 +16,4 @@ const store = configureStore({
 
 export default store;
 export const server = "https://foodie-server-iota.vercel.app/api/v1";
+// export const server = "https://foodie-backend.vercel.app/api/v1";

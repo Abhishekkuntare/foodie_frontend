@@ -7,11 +7,14 @@ nav {
     justify-content: space-around;
     align-items: center;
 
+    .header_img {
+            width: 120px;
+        }
     >div {
         display: flex;
         align-items: center;
-        
-        >a{
+
+        >a {
             >img {
                 width: 5rem;
                 height: 5rem;
@@ -26,7 +29,7 @@ nav {
 
             &:hover {
                 color: #532103;
-                    font-weight: 900;
+                font-weight: 900;
             }
 
             >svg {
@@ -42,6 +45,9 @@ nav {
     }
 }
 
+.header_mobile {
+    display: none;
+}
 @media screen and (max-width: 600px) {
     nav {
         padding: 1rem;
@@ -50,9 +56,19 @@ nav {
             margin: 0 0.5rem;
         }
     }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                @media screen and (max-width: 400px) {
-                                                                                                                                                                                                                                                                    .header_img {
-                                                                                                                                                                                                                                                                        display: none;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                }
+}
+
+@media screen and (max-width: 400px) {
+    .header_img {
+        width: 90px;
+        }
+        }
+        
+        @media screen and (max-width: 850px) {
+            .header_default {
+        display: none;
+        }
+                                .header_mobile {
+                                    display: flex;
+                                }
+                                }

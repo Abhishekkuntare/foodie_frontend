@@ -1,11 +1,14 @@
 import React from "react";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
     <footer>
       <div>
-        <h2>KAFF</h2>
+        <h4 style={{ color: "#fec51c" }}>
+          <img width={100} className="header_img" src={logo} alt="logo" />
+        </h4>
         <p>I lost some weight once, but I found it again in the fridge.</p>
         <br />
         <em> I'm not gonna sugar coat the truth, I'm not Willy Wonka.</em>

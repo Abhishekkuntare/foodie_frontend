@@ -1,0 +1,28 @@
+.headerMobile_main {
+    position: fixed;
+    top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  background-color: #f3bc73;
+}
+.headerMobile_main > svg {
+  float: right;
+  margin-bottom: 20px;
+}
+.mobile_header_link {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile_header_link > a {
+  color: black;
+  margin-bottom: 20px;
+}
+

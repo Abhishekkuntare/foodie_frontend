@@ -27,7 +27,10 @@ const About = () => {
           <h2>Founder</h2>
           <article>
             <div>
-              <img src={me} alt="Founder" />
+              <img
+                src={"https://abhishekkuntare0210.vercel.app/images/abhi.jpg"}
+                alt="Founder"
+              />
               <h3>Abhishek Kuntare</h3>
             </div>
 

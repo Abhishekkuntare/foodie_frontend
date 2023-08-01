@@ -43,6 +43,8 @@ import toast, { Toaster } from "react-hot-toast";
 import UserRegister from "./components/auth/UserRegister";
 import UserLogin from "./components/auth/UserLogin";
 import { loadUser } from "./redux/actions/loginUser";
+import Store from "./components/Store/Store";
+import Stories from "./components/Stories/Stories";
 
 function App() {
   const { isAuthenticated, user, message, error, loading } = useSelector(
@@ -75,6 +77,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/register" element={<UserRegister />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/stories" element={<Stories />} />
 
         <Route
           path="/login"
@@ -112,7 +116,7 @@ function App() {
             <ProtectedRoute
               isAuthenticated={isAuthenticated}
               adminRoute={true}
-              isAdmin={ user && user.role === "admin"}                                                                                                                                                                               
+              isAdmin={user && user.role === "admin"}
               redirectAdmin="profile"
             />
           }

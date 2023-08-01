@@ -10,14 +10,13 @@ import { motion } from "framer-motion";
 
 const Header = ({isAuthenticated} ) => {
   return (
-    <nav style={{backgroundColor:"#feefdb"}}>
+    <nav style={{ backgroundColor: "#feefdb" }}>
       <motion.div initial={{ x: "-100%" }} whileInView={{ x: 0 }}>
         <Link to="/">
-        
-          <h4 style={{color:"#fec51c"}}> 
-          <img src={burger} alt="logo" />
-          
-            KAFF</h4>
+          <h4 style={{ color: "#fec51c" }}>
+            <img className="header_img" src={burger} alt="logo" />
+            KAFF
+          </h4>
         </Link>
       </motion.div>
 
@@ -31,7 +30,7 @@ const Header = ({isAuthenticated} ) => {
         </Link>
 
         <Link to={isAuthenticated ? "/profile" : "/login"}>
-          {isAuthenticated ? <FaUser  /> : <FiLogIn />}
+          {isAuthenticated ? <FaUser /> : <FiLogIn />}
         </Link>
       </div>
     </nav>

@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <h2>Foodie😋</h2>
+        <h2>KAFF</h2>
         <p>I lost some weight once, but I found it again in the fridge.</p>
         <br />
         <em> I'm not gonna sugar coat the truth, I'm not Willy Wonka.</em>
-        <strong>All right received @Foodie &#169; 2022</strong>
+        <strong>All right received @KAFF &#169; 2022</strong>
       </div>
       <aside>
         <h4>Follow us</h4>

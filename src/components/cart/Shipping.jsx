@@ -47,6 +47,7 @@ const Shipping = () => {
           <div>
             <label>H. No</label>
             <input
+              required
               type="text"
               placeholder="Enter House no."
               value={hNo}
@@ -58,6 +59,7 @@ const Shipping = () => {
             <label>Country</label>
 
             <select
+              required
               value={country}
               onChange={(e) => setCountry(e.target.value)}
             >
@@ -74,7 +76,11 @@ const Shipping = () => {
           {country && (
             <div>
               <label>State</label>
-              <select value={state} onChange={(e) => setState(e.target.value)}>
+              <select
+                required
+                value={state}
+                onChange={(e) => setState(e.target.value)}
+              >
                 <option value="">State</option>
                 {State &&
                   State.getStatesOfCountry(country).map((i) => (
@@ -89,6 +95,7 @@ const Shipping = () => {
           <div>
             <label>City</label>
             <input
+              required
               type="text"
               placeholder="Enter City"
               value={city}
@@ -99,6 +106,7 @@ const Shipping = () => {
           <div>
             <label>Pin Code.</label>
             <input
+              required
               type="number"
               placeholder="Enter Pincode"
               value={pinCode}
@@ -108,6 +116,7 @@ const Shipping = () => {
           <div>
             <label>Phone No.</label>
             <input
+              required
               type="number"
               placeholder="Enter Phone No."
               value={phoneNo}

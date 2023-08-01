@@ -82,5 +82,31 @@
     .menuCard {
         width: 100%;
         margin: 1rem 0;
+        height: 326px;
+        
+            >div {
+                padding: 15px;
+                height: 0;
+            }
+        
+            >main {
+                padding: 10px;
+        
+                >h5 {
+                    font-size: 1.2rem;
+                }
+        
+                >p {
+                    padding: 0;
+                }
+        
+                >button {
+                    width: 72%;
+                }
+        
+                >img {
+                    height: 8rem;
+                }
+            }
     }
 }

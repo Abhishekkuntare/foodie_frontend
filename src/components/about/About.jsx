@@ -10,10 +10,8 @@ const About = () => {
         <h1>About Us</h1>
 
         <article>
-          <h4>Foodie 😋</h4>
-          <p>
-            We Foodie. The place for most tasty burgers on the enitre earth.
-          </p>
+          <h4>KAFF 😋</h4>
+          <p>We KAFF. The place for most tasty burgers on the enitre earth.</p>
 
           <p>
             Explore the various type of food and burgers. Click below to see the
@@ -34,7 +32,7 @@ const About = () => {
             </div>
 
             <p>
-              I am Abhishek Kuntare, the founder of Foodie. Affiliated to God
+              I am Abhishek Kuntare, the founder of KAFF. Affiliated to God
               Taste...
             </p>
           </article>

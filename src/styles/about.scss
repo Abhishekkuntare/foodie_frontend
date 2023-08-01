@@ -2,20 +2,21 @@
 
 .about {
     width: 100%;
-    background-color: $pink;
+    background-color: #feefdb;
 
     >main {
-        background-color: white;
+        background-color: feefdb;
         max-width: 900px;
         height: 100%;
         margin: auto;
 
         >h1 {
             font: 500 3rem "Poppins";
-            color: $red;
+            color: black;
             padding: 1rem 2rem;
             text-transform: uppercase;
-            background-color: $dark;
+            background-color: #feefdb;
+                text-align: center;
         }
 
         >article {
@@ -58,9 +59,9 @@
         }
 
         >div {
-            background-color: $dark;
+            background-color: #feefdb;
             padding: 2rem;
-            color: white;
+            color: black;
 
             >h2 {
                 text-align: center;

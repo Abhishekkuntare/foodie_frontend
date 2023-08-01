@@ -3,7 +3,7 @@
 .contact {
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/bg.png");
+    background-color: #feefdb;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: #feefdb;
         padding: 2rem;
         width: 40%;
         height: 80%;
@@ -33,21 +33,22 @@
         >button {
             padding: 1rem;
             outline: none;
-            border: 1px solid rgb(202, 202, 202);
+            border: 1px solid rgb(42, 41, 41);
             margin: 0.5rem;
             width: 60%;
             border-radius: 5px;
+            background-color: transparent;
         }
 
         >button {
-            background-color: $red;
+        background-color: #fec51c;
             border: none;
             cursor: pointer;
             color: white;
             font-size: 1rem;
 
             &:hover {
-                background-color: $reddark;
+                background-color: dark;
             }
         }
     }
@@ -55,7 +56,7 @@
     .formBorder {
         width: 200px;
         height: 80%;
-        background-color: white;
+        background-color: #feefdb;
         border-radius: 0 200px 200px 0;
         position: relative;
 

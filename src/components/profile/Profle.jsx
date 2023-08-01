@@ -32,10 +32,10 @@ const Profle = () => {
       <main>
         <motion.img src={user.avatar.url} alt="User" {...options} />
         <motion.h5 transition={{ delay: 0.3 }} {...options}>
-          {user.name}
+          Name: {user.name}
         </motion.h5>
         <motion.h5 transition={{ delay: 0.3 }} {...options}>
-          {user.email}
+          Email: {user.email}
         </motion.h5>
         {user.role === "admin" && (
           <motion.div {...options} transition={{ delay: 0.5 }}>
